@@ -1,0 +1,30 @@
+<div ng-init="confirmModal = false;" class="animated fadeIn">
+  <div class="panel panel-default" ng-init="getAll()">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Orders<button ng-click="getAll();">Refresh</button></div>
+    <div class="panel-body">
+      <p>Φαγητά προς παραγγελεία.</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+    	<tr>
+    		<th>
+    			User
+    		</th>
+    		<th>
+    			Text
+    		</th>
+    		<th>
+    			Action
+    		</th>
+    	</tr>
+      <tr ng-repeat="o in foods">
+      	<td>{{o.user}}</td>
+      	<td>{{o.text}}</td>
+      	<td><button class="btn btn-primary" ng-click="del(o);" ng-if="o.userId == user.userId">Remove</button></td>
+      </tr>
+    </table>
+    <button  class="btn btn-info" style="float:right;margin-top: 10px;"  data-toggle="modal" data-target=".confirmModal">Confirm Order</button>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('me')
+angular.module('cafe')
+
 
 .directive('appVersion', ['version', function(version) {
   return function(scope, elm, attrs) {

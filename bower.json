@@ -10,6 +10,12 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0"
+    "html5-boilerplate": "~5.2.0",
+    "bootstrap": "~3.3.5",
+    "animate-css": "~3.3.0",
+    "ui-router": "~0.2.15",
+    "ngstorage": "~0.3.6",
+    "angular-toastr": "~1.4.1",
+    "angular-animate": "~1.4.1"
   }
 }

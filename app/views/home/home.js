@@ -1,15 +1,16 @@
 'use strict';
 
-angular.module('me')
+angular.module('cafe')
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {
-      templateUrl: 'home/home.html',
-      controller: 'homeCtrl',
-      params:{
-          name:"home"
-      }
-  });
+.config(['$stateProvider', function($stateProvider) {
+    $stateProvider
+        .state('/home', {
+          templateUrl: 'home/home.html',
+          controller: 'homeCtrl',
+          params:{
+              name:"home"
+          }
+        });
 }])
 
 .controller('homeCtrl', [function() {

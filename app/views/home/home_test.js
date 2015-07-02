@@ -2,7 +2,7 @@
 
 describe('me module', function() {
 
-  beforeEach(module('me'));
+  beforeEach(module('cafe'));
 
   describe('home controller', function(){
 

@@ -1,5 +1,5 @@
 'use strict';
 
-angular.module('me')
+angular.module('cafe')
 
 .value('version', '0.1');

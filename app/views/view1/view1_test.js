@@ -2,7 +2,7 @@
 
 describe('myApp.view1 module', function() {
 
-  beforeEach(module('me'));
+  beforeEach(module('cafe'));
 
   describe('view1 controller', function(){
 

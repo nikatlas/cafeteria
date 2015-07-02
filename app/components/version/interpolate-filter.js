@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('me')
+angular.module('cafe')
 
 .filter('interpolate', ['version', function(version) {
   return function(text) {
